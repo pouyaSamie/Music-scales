@@ -1,2 +1,2 @@
 # Music-scales
-simple library for generate Music sclaes
+a simple library to generate Music scales
