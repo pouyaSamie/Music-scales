@@ -1,0 +1,129 @@
+{
+    "scales": [
+      {
+        "name": "Major",
+        "intervals": [0, 0, 0, 0, 0, 0, 0]
+      },
+      {
+        "name": "Minor",
+        "intervals": [0, 0, -1, 0, 0, -1, -1]
+      },
+      {
+        "name": "Harmonic Minor",
+        "intervals": [0, 0, -1, 0, 0, -1, 0]
+      },
+      {
+        "name": "Melodic Minor",
+        "intervals": [0, 0, -1, 0, 0, 0, 0, -1, 0, 0, -1, 0, 0]
+      },
+      {
+        "name": "Pentatonic Major",
+        "intervals": [0, 0, 0, 0, 0]
+      },
+      {
+        "name": "Pentatonic Minor",
+        "intervals": [0, -1, 0, 0, -1]
+      },
+      {
+        "name": "Blues",
+        "intervals": [0, -1, 0, 0, -1, 0, -1]
+      },
+      {
+        "name": "Dorian Mode",
+        "intervals": [0, 0, -1, 0, 0, 0, -1]
+      },
+      {
+        "name": "Phrygian Mode",
+        "intervals": [0, -1, -1, 0, 0, -1, -1]
+      },
+      {
+        "name": "Lydian Mode",
+        "intervals": [0, 0, 0, 1, 0, 0, 0]
+      },
+      {
+        "name": "Mixolydian Mode",
+        "intervals": [0, 0, 0, 0, 0, 0, -1]
+      },
+      {
+        "name": "Locrian Mode",
+        "intervals": [0, -1, -1, 0, -1, -1, -1]
+      },
+      {
+        "name": "Whole Tone",
+        "intervals": [0, 0, 0, 1, 1, -1]
+      },
+      {
+        "name": "Diminished",
+        "intervals": [0, -1, -1, 0, 1, 0, 0, 0]
+      },
+      {
+        "name": "Hungarian Minor",
+        "intervals": [0, -1, 0, 1, 0, -1, 0]
+      },
+      {
+        "name": "Neapolitan Major",
+        "intervals": [0, -1, -1, 0, 0, 0, 0]
+      },
+      {
+        "name": "Neapolitan Minor",
+        "intervals": [0, -1, -1, 0, 0, -1, 0]
+      },
+      {
+        "name": "Bebop Major",
+        "intervals": [0, 0, 0, 0, 0, 1, 0, 0]
+      },
+      {
+        "name": "Bebop Dorian",
+        "intervals": [0, 0, -1, 0, 0, 0, -1, 0]
+      },
+      {
+        "name": "Bebop Dominant",
+        "intervals": [0, 0, 0, 0, 0, 0, -1, 0]
+      },
+      {
+        "name": "Bebop Melodic Minor",
+        "intervals": [0, 0, -1, 0, 0, 0, 0, 0]
+      },
+      {
+        "name": "Altered",
+        "intervals": [0, -1, -1, -1, -1, -1, -1]
+      },
+      {
+        "name": "Spanish",
+        "intervals": [0, -1, 0, 0, 0, -1, 0]
+      },
+      {
+        "name": "Arabian",
+        "intervals": [0, -1, 0, 0, -1, -1, 0]
+      },
+      {
+        "name": "Japanese (Yo)",
+        "intervals": [0, -1, 0, 0, -1]
+      },
+      {
+        "name": "Indian Raga (Bhairavi)",
+        "intervals": [0, 0, -1, 0, 0, -1, 0]
+      },
+      {
+        "name": "Celtic",
+        "intervals": [0, 0, -1, 0, 0, -1, -1]
+      },
+      {
+        "name": "Augmented",
+        "intervals": [0, -1, 0, 0, 1, 0]
+      },
+      {
+        "name": "Prometheus",
+        "intervals": [0, -1, -1, 0, 1, -1]
+      },
+      {
+        "name": "Enigmatic",
+        "intervals": [0, -1, 0, 1, 1, 0, 0]
+      },
+      {
+        "name": "Persian (Hijaz or Saba)",
+        "intervals": [0, -1, 0, 0, -1, -1, 0]
+      }
+    ]
+  }
+  

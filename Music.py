@@ -1,3 +1,5 @@
+import json
+
 class CircleOfFifths:
     def __init__(self):
         self.sharps = ['C', 'G', 'D', 'A', 'E', 'B', 'F#', 'C#']
@@ -5,7 +7,12 @@ class CircleOfFifths:
         self.sharp_orders = ['F', 'C', 'G', 'D', 'A', 'E', 'B']
         self.flat_orders = ['B', 'E', 'A', 'D', 'G', 'C', 'F']
         self.notes = ['A', 'B', 'C', 'D', 'E', 'F', 'G']
+        self.scale_data = self.load_scale_data()
 
+    def load_scale_data(self):
+        with open('scales.json') as f:
+            return json.load(f)
+        
     def get_accidentals(self, key):
         if key in self.sharps:
             index = self.sharps.index(key)
@@ -59,7 +66,7 @@ class CircleOfFifths:
         else:
             return note_equivalents[note]['Natural']
 
-    def create_scale(self,key, intervals):
+    def get_scale_from_intervals(self,key, intervals):
         major_scale = self.generate_major_scale(key)
         
         minor_scale = []
@@ -69,3 +76,11 @@ class CircleOfFifths:
             minor_scale.append(transposed_note)
 
         return minor_scale
+    
+    def generate(self, key, scale_name):
+        scale = next((scale for scale in self.scale_data['scales'] if scale["name"].lower() == scale_name.lower()), None)
+        if scale is None:
+            return []
+        
+        intervals = scale["intervals"]
+        return self.get_scale_from_intervals(key, intervals)

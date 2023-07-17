@@ -93,10 +93,9 @@ def test_minor_scales():
         'Bb': ['Bb', 'C', 'Db', 'Eb', 'F', 'Gb', 'Ab'],
         'B': ['B', 'C#', 'D', 'E', 'F#', 'G', 'A']
     }
-    minor_intervals = [0, 0, -1, 0, 0, -1, -1]
     for root_note, expected_scale in minor_scales.items():
         circle = CircleOfFifths()
-        scale = circle.create_scale(root_note,minor_intervals)
+        scale = circle.generate(root_note,"minor")
         assert scale == expected_scale, f"Test failed for {root_note} minor scale. \r\n Expected: {expected_scale} \r\n output:{scale}"
     print('All test Passed')
 
@@ -119,7 +118,7 @@ def test_Harmonicminor_scales():
     HarmonicMinor_intervals = [0, 0, -1, 0, 0, -1, 0]
     for root_note, expected_scale in harmonic_minor_scales.items():
         circle = CircleOfFifths()
-        scale = circle.create_scale(root_note,HarmonicMinor_intervals)
+        scale = circle.generate(root_note,"Harmonic Minor")
         assert scale == expected_scale, f"Test failed for {root_note} Harmonic minor scale. \r\n Expected: {expected_scale} \r\n output:{scale}"
     print('All test Passed')
 
